@@ -1,0 +1,120 @@
+<HTML>
+<HEAD><TITLE>Indice:</TITLE>
+<script language="JavaScript">
+function mueveReloj(){
+    momentoActual = new Date()
+    hora = momentoActual.getHours()
+    minuto = momentoActual.getMinutes()
+    segundo = momentoActual.getSeconds()
+
+    horaImprimible = hora + " : " + minuto + " : " + segundo
+
+    document.form_reloj.reloj.value = horaImprimible
+
+    setTimeout("mueveReloj()",1000)
+}
+
+var ran
+ran = Math.round(Math.random()*50000)
+document.write("Usted es el visitante " + ran + " de esta página.")
+
+</script>
+
+</HEAD>
+<BODY font face="Kristen ITC" size=5 text=White bgcolor=Black alink=Yellow vlink=e3887f link=Orange   onload="mueveReloj()">
+
+Hora actual:
+
+<form name="form_reloj">
+<input type="text" name="reloj" size="10">
+</form>
+<font size=7 align=center>
+
+
+<align=center>
+<marquee widht=85% height=150 scrolldelay=0 behavior=slide><img src=imagenes/Banner.gif></marquee></p>
+
+
+<HR align=center size=15 width=85% color=Orange>
+</font>
+<br><br><br>
+
+
+<img src=imagenes/Instrumentos.png width=320 height=350 align=right>
+<font size=6 align=center>
+Como introduccion y bienvenida, hablaremos acerca de 
+<br>
+los intrumentos en la prehistoria, al igual
+<br>
+que ciertas curiosidades.
+<br><br><br>
+
+
+
+<font face="Papyrus" size=5>
+<b>Sabias que:
+<dl>
+<dt>El primer instrumento musical conocido fue creado hace alrededor de 50,000 años y consistía en un hueso de ave utilizado como flauta para producir sonidos. Otra de las invenciones antiguas fueron los tambores que producen rítmicas y repetitivas notas, que datan de hace unos 6,000 años.</dt>
+<br>
+<img src=imagenes/antiguo.jpeg width=250 height=200 align=center>
+<br>
+</dl>
+<p align=Left>
+“Silbatos y flautas, hechos de hueso, se han hallado en muchas cavernas paleolíticas. Un hallazgo particularmente antiguo fue una flauta hecha con hueso de oso, descubierta en una caverna eslovaca en 1995, que data del 41,000 a.C., aproximadamente. Lo que es más importante todavía: en mayo de 2012 un equipo de las universidades de Oxford y Tubinga desenterró unas flautas hechas de marfil de mamut y de huesos de aves en la caverna de Geissenklöterle, en la región del Jura, en Suabia, en el sur de Alemania, que datan, mediante el carbono 14, de entre el 43,000 y el 42,000 a.C., lo cual los convierte en los instrumentos musicales más antiguos hallados.
+<br>
+Serán simples en sus sonidos y limitadas en cuanto a la variedad y, sin embargo, la sección de viento-metal de Duke Ellington y la pobladísima sección de instrumentos de viento-madera de la Filarmónica de Berlín se crearon, algún día, a partir de polvorientos artefactos como estos”.
+<br>
+Fuente: Howard Goodall, Una historia de la música, Antoni Bosch, editor, S.A., Barcelona, 2013.
+<br>
+</font>
+<font face="Cooper" size=5 color=White>
+</font>
+<center>
+<embed src=videos/prehistoria.mp4 width=350 height=370>
+<br>
+Puedes ver nuestro catalogo de instrimentos dando cilck <a href=(1)Introduccion.html><b>aqui</b></a>
+<br><br>
+</center>
+
+
+
+<p align=left>
+<font face="Kristen ITC" size=5 color=White>
+Estos catalogos fueron creados por un estudiante del "<b>Colegio de Bachilleres Plantel 10</b>"
+<br>
+Fernandez Arellano Luis Manuel. (Auxiliar Diseñador Grafico)
+</font>
+</p>
+<a href=https://planteles.cbachilleres.edu.mx/plantel-10-aeropuerto.html><img src=imagenes/PLANTEL_10.png width=420 height=300 align=left></a>
+<center>
+<img src=imagenes/koba.png width=320 height=350 align=right>
+</center>
+
+<section id="nosotros">
+		<h2>Nosotros</h2>
+		<p>Somos una tienda de instrumentos eléctricos con más de 20 años de experiencia en el mercado, ofreciendo productos de alta calidad a nuestros clientes.</p>
+	</section>
+
+	<section id="contacto">
+		<h2>Contacto</h2>
+		<form action="#">
+			<label for="nombre">Nombre:</label>
+			<input type="text" id="nombre" name="nombre" required>
+
+			<label for="correo">Correo electrónico:</label>
+			<input type="email" id="correo" name="correo" required>
+
+			<label for="mensaje">Mensaje:</label>
+			<textarea id="mensaje" name="mensaje" required></textarea>
+
+			<button type="submit">Enviar</button>
+		</form>
+	</section>
+</main>
+
+<footer>
+	<p>Tienda de instrumentos eléctricos &copy; 2021</p>
+</footer>
+
+</BODY>
+</HTML>
